@@ -1,0 +1,118 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: Overpass, sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  background-image: linear-gradient(#ff9500, #ff5e3a);
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+svg {
+  fill: #fff;
+  width: 7rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-top: .1em;
+  margin: .5em;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+a {
+  font-size: 1.125rem;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 0 1.5em;
+  color: #fff;
+  border-color: #fff;
+  border: 2px solid #fff;
+}
+
+a:hover, a:focus {
+  color: #ff9500;
+}
+
+p {
+  text-align: left;
+  padding-bottom: 1rem;
+  margin: .5rem;
+}
+
+.card {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.cardgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+}
+
+@media only screen and (min-width: 38em) {
+
+  h2 {
+    text-align: center;
+    margin: 1em;
+  }
+
+  h3 {
+    display: flex;
+    text-align: left;
+    font-size: 1.5rem;
+    margin: .5em 0;
+  }
+
+  a {
+    display: flex;
+    text-align: left;
+    font-size: .5rem;
+    margin: .5em;
+  }
+
+  p {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+
+  .cardgrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 6vmin;
+    margin: 2em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .cardgrid {
+    margin: 6em;
+  }
+
+}
